@@ -17,8 +17,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        BasicConfigurator.configure();
-        LOGGER.setLevel(Level.INFO);
+//        BasicConfigurator.configure();
+//        LOGGER.setLevel(Level.INFO);
 
         Scanner scanner = new Scanner("10");
         int number = scanner.nextInt();
@@ -44,7 +44,7 @@ public class Main {
         LOGGER.debug("Start: result = " + result);
 
 
-        for (int i = 2; i <= number; i++) {
+        for (int i = 2; i < 1000000; i++) {
             result *= i;
             LOGGER.trace(String.format("i =  %d, result = %d", i, result));
         }
